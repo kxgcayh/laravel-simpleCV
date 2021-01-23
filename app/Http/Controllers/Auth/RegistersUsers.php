@@ -65,13 +65,13 @@ trait RegistersUsers
      */
     protected function registered(Request $request, $user)
     {
-        Experience::create([
-            'company' => 'PT. PT-an',
-            'user_id' => Auth::id(),
-            'title' => 'Web Enginer',
-            'description' => 'Disini saya menjadi gila',
-            'from_date' => now(),
-            'to_date' => Carbon::tomorrow(),
-        ]);
+        // Experience::create([
+        //     'company' => 'PT. PT-an',
+        //     'user_id' => Auth::id(),
+        //     'title' => 'Web Enginer',
+        //     'description' => 'Disini saya menjadi gila',
+        //     'from_date' => now(),
+        //     'to_date' => Carbon::tomorrow(),
+        // ]);
     }
 }
