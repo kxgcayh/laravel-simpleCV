@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/bootstrap-grid.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/animations.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/perfect-scrollbar.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}" type="text/css">
@@ -20,7 +21,13 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('fonts/fontawesome-free/css/all.css') }}">
     <script src="{{ asset('fonts/fontawesome-free/js/all.js') }}"></script>
-    <script src="js/modernizr.custom.js"></script>
+    <script src="{{ asset('js/modernizr.custom.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
+    <script src="{{ asset('js/moment.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap-datetimepicker.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-datetimepicker.min.css') }}">
+
 </head>
 
 <body>
@@ -92,7 +99,9 @@
             </div>
         </div>
     </div>
-    <script src="{{ asset('js/jquery-2.1.3.min.js') }}"></script>
+    {{-- <script src="{{ asset('js/jquery-2.1.3.min.js') }}"></script>
+    --}}
+    <script src="{{ asset('js/popper.js') }}"></script>
     <script src="{{ asset('js/modernizr.custom.js') }}"></script>
     <script src="{{ asset('js/animating.js') }}"></script>
     <script src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
@@ -103,6 +112,12 @@
     <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/validator.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
+    <script type="text/javascript">
+        $(function() {
+            //
+        });
+
+    </script>
 </body>
 
 </html>

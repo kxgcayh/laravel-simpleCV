@@ -26,7 +26,7 @@
                     </li>
                     <li>
                         <span class="title">Phone</span>
-                        <span class="value">{{ Auth::user()->email }}</span>
+                        <span class="value">{{ Auth::user()->phone }}</span>
                     </li>
                 </ul>
             </div>
