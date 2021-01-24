@@ -3,7 +3,9 @@
 ## Instalasi
 
 1. Buka Command Prompt dalam Folder Lokal Server.
-2. Clone Repository `git clone git@github.com:kxgcayh/laravel-simpleCV.git simpleCV`
+2. Clone Repository dengan:
+    1. SSH: `git clone git@github.com:kxgcayh/laravel-simpleCV.git simpleCV` atau
+    2. HTTPS: `git clone https://github.com/kxgcayh/laravel-simpleCV.git`.
 3. Buka XAMPP dan Buatlah Database Baru
 4. Masuk ke Dalam Folder SMSBC Website Landing `cd simpleCV`
 5. Install Composer `composer install`
