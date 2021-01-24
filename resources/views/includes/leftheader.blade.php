@@ -28,7 +28,7 @@
         @endif
     </div>
     <ul class="main-menu">
-        <li>
+        <li class="active">
             <a href="#home" class="nav-anim">
                 <span class="menu-icon lnr lnr-home"></span>
                 <span class="link-text">Home</span>

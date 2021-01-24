@@ -10,22 +10,22 @@
             @csrf
             <div class="controls two-columns">
                 <div class="fields clearfix">
+                    <label style="color: #04b4e0; font-size: 13px;">Email Address</label>
                     <div class="form-group form-group-with-icon">
-                        <input id="email" type="email" name="email"
+                        <input id="login_email" type="email" name="email"
                             class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}"
                             required autocomplete="email">
-                        <label>Email Address</label>
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
                     </div>
+                    <label style="color: #04b4e0; font-size: 13px;">Password</label>
                     <div class="form-group form-group-with-icon">
-                        <input id="password" type="password" name="password"
+                        <input id="login_password" type="password" name="password"
                             class="form-control @error('password') is-invalid @enderror" required
                             autocomplete="new-password">
-                        <label>Password</label>
                         @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>

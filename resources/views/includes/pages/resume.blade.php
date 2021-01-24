@@ -26,7 +26,7 @@
                     </li>
                     <li>
                         <span class="title">Phone</span>
-                        <span class="value">{{ Auth::user()->phone }}</span>
+                        <span class="value">0{{ Auth::user()->phone }}</span>
                     </li>
                 </ul>
             </div>
@@ -39,10 +39,10 @@
     <div class="row">
         <div class="col-xs-12">
             @foreach ($users as $user)
+                <div class="block-title">
+                    <h3>Experience</h3>
+                </div>
                 @foreach ($user->experiences as $experience)
-                    <div class="block-title">
-                        <h3>Experience</h3>
-                    </div>
                     <div class="timeline timeline-second-style clearfix">
                         <div class="timeline-item clearfix">
                             <div class="left-part">
