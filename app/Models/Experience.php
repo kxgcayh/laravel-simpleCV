@@ -12,8 +12,8 @@ class Experience extends Model
     protected $fillable = [
         'company',
         'user_id',
-        'title',
-        'description',
+        'exp_title',
+        'exp_description',
         'from_date',
         'to_date',
     ];

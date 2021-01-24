@@ -42,15 +42,27 @@
                 </a>
             </li>
             <li>
-                <a href="#edit-cv" class="nav-anim">
+                <a href="#edit-profile" class="nav-anim">
                     <i class="fas fa-user-edit"></i>
-                    <span class="link-text">Edit</span>
+                    <span class="link-text">Update<br>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#insert-experience" class="nav-anim">
+                    <i class="fas fa-book-reader"></i><br>
+                    <span class="link-text">Insert<br>Experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="#insert-education" class="nav-anim">
+                    <i class="fas fa-graduation-cap"></i><br>
+                    <span class="link-text">Insert<br>Education</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route('logout') }}"
                     onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="nav-anim">
-                    <i class="fas fa-sign-out-alt"></i>
+                    <i class="fas fa-sign-out-alt"></i><br>
                     <span class="link-text">Logout</span>
                 </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -66,7 +78,7 @@
             </li>
             <li>
                 <a href="#login" class="nav-anim">
-                    <span class="fas fa-sign-in-alt"></span>
+                    <span class="fas fa-sign-in-alt"></span><br>
                     <span class="link-text">Get CV</span>
                 </a>
             </li>

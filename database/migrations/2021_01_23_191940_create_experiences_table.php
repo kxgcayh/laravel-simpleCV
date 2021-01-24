@@ -16,8 +16,8 @@ class CreateExperiencesTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('company');
-            $table->string('title');
-            $table->text('description');
+            $table->string('exp_title');
+            $table->text('exp_description');
             $table->date('from_date')->nullable();
             $table->date('to_date')->nullable();
             $table->timestamps();

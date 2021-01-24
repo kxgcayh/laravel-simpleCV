@@ -84,8 +84,14 @@
                         <section data-id="resume" class="animated-section">
                             @resume
                         </section>
-                        <section data-id="edit-cv" class="animated-section">
-                            @edit
+                        <section data-id="edit-profile" class="animated-section">
+                            @editprofile
+                        </section>
+                        <section data-id="insert-experience" class="animated-section">
+                            @experience
+                        </section>
+                        <section data-id="insert-education" class="animated-section">
+                            @education
                         </section>
                     @else
                         <section data-id="create-cv" class="animated-section">

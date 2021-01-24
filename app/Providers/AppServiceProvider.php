@@ -22,7 +22,9 @@ class AppServiceProvider extends ServiceProvider
         // Form Page
         Blade::include('includes.forms.register', 'register');
         Blade::include('includes.forms.login', 'login');
-        Blade::include('includes.forms.edit', 'edit');
+        Blade::include('includes.forms.profile', 'editprofile');
+        Blade::include('includes.forms.experience', 'experience');
+        Blade::include('includes.forms.education', 'education');
         // Template
         Blade::include('includes.leftheader', 'leftheader');
         Blade::include('includes.pages.resume', 'resume');

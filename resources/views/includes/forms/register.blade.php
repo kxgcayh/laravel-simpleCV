@@ -24,10 +24,10 @@
                         </div>
                         <label style="color: #04b4e0; font-size: 13px;">Email Address</label>
                         <div class="form-group form-group-with-icon">
-                            <input id="email" type="email" name="email"
-                                class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}"
-                                required autocomplete="email">
-                            @error('email')
+                            <input id="email_register" type="email" name="email_register"
+                                class="form-control @error('email_register') is-invalid @enderror"
+                                value="{{ old('email_register') }}" required autocomplete="email_register">
+                            @error('email_register')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>

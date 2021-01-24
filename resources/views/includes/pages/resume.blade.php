@@ -40,6 +40,32 @@
         <div class="col-xs-12">
             @foreach ($users as $user)
                 <div class="block-title">
+                    <h3>Education</h3>
+                </div>
+                @foreach ($user->educations as $education)
+                    <div class="timeline timeline-second-style clearfix">
+                        <div class="timeline-item clearfix">
+                            <div class="left-part">
+                                <h5 class="item-period">
+                                    {{ substr($education->date, 0, 4) }}
+                                </h5>
+                                <span class="item-company">
+                                    {{ $education->institution }}
+                                </span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="right-part">
+                                <h4 class="item-title">
+                                    {{ $education->major }}
+                                </h4>
+                                <p>
+                                    {{ $education->edu_description }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+                <div class="block-title">
                     <h3>Experience</h3>
                 </div>
                 @foreach ($user->experiences as $experience)
@@ -47,7 +73,8 @@
                         <div class="timeline-item clearfix">
                             <div class="left-part">
                                 <h5 class="item-period">
-                                    {{ $experience->from_date }} s/d {{ $experience->to_date }}
+                                    {{ substr($experience->from_date, 0, 4) }} -
+                                    {{ substr($experience->to_date, 0, 4) }}
                                 </h5>
                                 <span class="item-company">
                                     {{ $experience->company }}
@@ -56,10 +83,10 @@
                             <div class="divider"></div>
                             <div class="right-part">
                                 <h4 class="item-title">
-                                    {{ $experience->title }}
+                                    {{ $experience->exp_title }}
                                 </h4>
                                 <p>
-                                    {{ $experience->description }}
+                                    {{ $experience->exp_description }}
                                 </p>
                             </div>
                         </div>

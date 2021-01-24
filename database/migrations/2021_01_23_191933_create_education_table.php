@@ -17,7 +17,7 @@ class CreateEducationTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('institution');
             $table->string('major');
-            $table->string('description');
+            $table->string('edu_description');
             $table->date('date');
             $table->timestamps();
         });
