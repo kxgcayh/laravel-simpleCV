@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/bootstrap-grid.min.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/animations.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/perfect-scrollbar.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}" type="text/css">
@@ -113,9 +113,7 @@
     <script src="{{ asset('js/validator.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
     <script type="text/javascript">
-        $(function() {
-            //
-        });
+        //
 
     </script>
 </body>

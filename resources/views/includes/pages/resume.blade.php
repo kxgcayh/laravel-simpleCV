@@ -38,12 +38,12 @@
 <div class="section-content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="block-title">
-                <h3>Experience</h3>
-            </div>
-            <div class="timeline timeline-second-style clearfix">
-                @foreach ($users as $user)
-                    @foreach ($user->experiences as $experience)
+            @foreach ($users as $user)
+                @foreach ($user->experiences as $experience)
+                    <div class="block-title">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="timeline timeline-second-style clearfix">
                         <div class="timeline-item clearfix">
                             <div class="left-part">
                                 <h5 class="item-period">
@@ -63,9 +63,9 @@
                                 </p>
                             </div>
                         </div>
-                    @endforeach
+                    </div>
                 @endforeach
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
