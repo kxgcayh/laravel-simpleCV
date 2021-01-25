@@ -17,13 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
 Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::put('/user/update', [UserController::class, 'update'])->name('user.update');
 Route::post('/education/store', [EducationController::class, 'store'])->name('education.store');
 Route::post('/experience/store', [ExperienceController::class, 'store'])->name('experience.store');
