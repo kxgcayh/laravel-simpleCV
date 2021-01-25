@@ -13,6 +13,11 @@
             <div class="info-list">
                 <ul>
                     <li>
+                        <span class="title">Age</span>
+                        <span
+                            class="value">{{ \Carbon\Carbon::now()->year - substr(Auth::user()->dateofbirth, 0, 4) }}</span>
+                    </li>
+                    <li>
                         <span class="title">Date of Birth</span>
                         <span class="value">{{ Auth::user()->dateofbirth }}</span>
                     </li>
