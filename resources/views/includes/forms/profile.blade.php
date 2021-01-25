@@ -111,22 +111,16 @@
                                 </span>
                             @enderror
                         </div>
-                        <label class="custom-label">Password Confirm</label>
-                        <div class="form-group form-group-with-icon">
-                            <input id="password-confirm" type="password" name="password_confirmation"
-                                class="form-control" autocomplete="new-password">
-                            @error('password_confirm')
+                        <label class="custom-label">Profile Picture</label>
+                        <div class="form-group form-group-with-icon"
+                            style="margin-left: -15px; margin-top: 2px; height: 46px;">
+                            <input type="file" id="image" name="image" data-toggle="custom-file-input"
+                                class="form-control @error('image') is-invalid @enderror" aria-label="Profile Picture">
+                            @error('image')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
-                        </div>
-                        <label class="custom-label">Choose new avatar</label>
-                        <div class="form-group form-group-with-icon"
-                            style="margin-left: -15px; margin-top: -5px; height: 46px;">
-                            <input type="file" class="custom-file-input" id="avatar" name="avatar"
-                                aria-describedby="inputGroupFileAddon01">
-                            <label class="custom-file-label" for="avatar">Choose file</label>
                         </div>
                     </div>
                 </div>

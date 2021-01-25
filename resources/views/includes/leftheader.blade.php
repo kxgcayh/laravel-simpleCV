@@ -2,7 +2,7 @@
     <div class="header-content">
         <div class="header-photo">
             @auth
-                <img src="{{ asset('img/main_photo.jpg') }}" alt="{{ Auth::user()->name }}">
+                <img src="{{ asset('storage/pics/' . Auth::user()->image) }}" alt="{{ Auth::user()->name }}">
                 <div class="header-titles">
                     <h2>{{ Auth::user()->name }}</h2>
                     <h4>{{ Auth::user()->title }}</h4>
