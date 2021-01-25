@@ -11,10 +11,11 @@ class UserController extends Controller
 {
     public function update(Request $request)
     {
+        // dd($request);
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email',
-            'password' => 'required',
+            // 'password' => 'required',
             'image' => 'nullable|image|max:1999',
         ]);
 
@@ -26,6 +27,7 @@ class UserController extends Controller
         $user->email = $request->email;
         $user->address = $request->address;
         $user->about = $request->about;
+
         // Image
         if ($request->has('image')) {
             $image = $request->image;
@@ -40,6 +42,7 @@ class UserController extends Controller
         }
         $user->save();
 
-        return back();
+        return dd($user);
+        // echo json_encode($data);
     }
 }

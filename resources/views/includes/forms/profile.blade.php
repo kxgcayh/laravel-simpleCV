@@ -7,7 +7,7 @@
             <h3>Your <span>Curriculum Vitae</span> is not complete yet</h3>
             <span>Please Update your Profile because there is no Experience and Education in your data</span>
         </div>
-        <form method="POST" action="{{ route('user.update') }}" enctype=”multipart/form-data”>
+        <form method="POST" action="{{ route('user.update') }}" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="block-title" style="margin-bottom: -10px;">

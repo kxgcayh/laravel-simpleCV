@@ -10,6 +10,7 @@
     <meta name="keywords"
         content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
     <meta name="author" content="lmpixels" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/bootstrap-grid.min.css') }}" type="text/css">
