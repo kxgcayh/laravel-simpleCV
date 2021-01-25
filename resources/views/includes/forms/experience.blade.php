@@ -15,7 +15,7 @@
             <div class="controls two-columns">
                 <div class="fields clearfix">
                     <div class="left-column">
-                        <label style="color: #04b4e0; font-size: 13px;">Company Name</label>
+                        <label class="custom-label">Company Name</label>
                         <div class="form-group form-group-with-icon">
                             <input id="company" type="text" name="company"
                                 class="form-control @error('company') is-invalid @enderror" autocomplete="company">
@@ -25,7 +25,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <label style="color: #04b4e0; font-size: 13px;">Title</label>
+                        <label class="custom-label">Title</label>
                         <div class="form-group form-group-with-icon">
                             <input id="exp_title" type="text" name="exp_title"
                                 class="form-control @error('exp_title') is-invalid @enderror" autocomplete="exp_title">
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                     <div class="right-column">
-                        <label style="color: #04b4e0; font-size: 13px;">
+                        <label class="custom-label">
                             From Date
                         </label>
                         <div class="form-group form-group-with-icon">
@@ -50,7 +50,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <label style="color: #04b4e0; font-size: 13px;">
+                        <label class="custom-label">
                             To Date
                         </label>
                         <div class="form-group form-group-with-icon">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            <label style="color: #04b4e0; font-size: 13px;">
+            <label class="custom-label">
                 Experience Description
             </label>
             <div class="form-group form-group-with-icon">

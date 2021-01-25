@@ -11,7 +11,7 @@
             <div class="controls two-columns">
                 <div class="fields clearfix">
                     <div class="left-column">
-                        <label style="color: #04b4e0; font-size: 13px;">Full Name</label>
+                        <label class="custom-label">Full Name</label>
                         <div class="form-group form-group-with-icon">
                             <input id="name" type="text" name="name" value="{{ old('name') }}"
                                 class="form-control @error('name') is-invalid @enderror" required autocomplete="name"
@@ -22,7 +22,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <label style="color: #04b4e0; font-size: 13px;">Email Address</label>
+                        <label class="custom-label">Email Address</label>
                         <div class="form-group form-group-with-icon">
                             <input id="email_register" type="email" name="email_register"
                                 class="form-control @error('email_register') is-invalid @enderror"
@@ -33,7 +33,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <label style="color: #04b4e0; font-size: 13px;">Title</label>
+                        <label class="custom-label">Title</label>
                         <div class="form-group form-group-with-icon">
                             <input id="title" type="text" name="title"
                                 class="form-control @error('title') is-invalid @enderror" value="{{ old('title') }}"
@@ -44,7 +44,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <label style="color: #04b4e0; font-size: 13px;">Password</label>
+                        <label class="custom-label">Password</label>
                         <div class="form-group form-group-with-icon">
                             <input id="password" type="password" name="password"
                                 class="form-control @error('password') is-invalid @enderror" required
@@ -55,7 +55,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <label style="color: #04b4e0; font-size: 13px;">Phone Number</label>
+                        <label class="custom-label">Phone Number</label>
                         <div class="form-group form-group-with-icon">
                             <input id="phone" type="number" name="phone"
                                 class="form-control @error('phone') is-invalid @enderror" value="{{ old('phone') }}"
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <div class="right-column">
-                        <label style="color: #04b4e0; font-size: 13px;">Address</label>
+                        <label class="custom-label">Address</label>
                         <div class="form-group form-group-with-icon">
                             <textarea id="address" name="address" rows="1"
                                 class="form-control @error('address') is-invalid @enderror" value="{{ old('address') }}"
@@ -79,7 +79,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <label style="color: #04b4e0; font-size: 13px;">About Me</label>
+                        <label class="custom-label">About Me</label>
                         <div class="form-group form-group-with-icon">
                             <textarea id="about" name="about" rows="1"
                                 class="form-control @error('about') is-invalid @enderror" value="{{ old('about') }}"
@@ -90,7 +90,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <label style="color: #04b4e0; font-size: 13px;">
+                        <label class="custom-label">
                             Date Of Birth
                         </label>
                         <div class="form-group form-group-with-icon">
@@ -103,7 +103,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <label style="color: #04b4e0; font-size: 13px;">Password Confirm</label>
+                        <label class="custom-label">Password Confirm</label>
                         <div class="form-group form-group-with-icon">
                             <input id="password-confirm" type="password" name="password_confirmation"
                                 class="form-control" required autocomplete="new-password">

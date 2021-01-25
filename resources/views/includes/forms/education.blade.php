@@ -15,7 +15,7 @@
             <div class="controls two-columns">
                 <div class="fields clearfix">
                     <div class="left-column">
-                        <label style="color: #04b4e0; font-size: 13px;">Institution Name</label>
+                        <label class="custom-label">Institution Name</label>
                         <div class="form-group form-group-with-icon">
                             <input id="institution" type="text" name="institution"
                                 class="form-control @error('institution') is-invalid @enderror"
@@ -26,7 +26,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <label style="color: #04b4e0; font-size: 13px;">Major Name</label>
+                        <label class="custom-label">Major Name</label>
                         <div class="form-group form-group-with-icon">
                             <input id="major" type="text" name="major"
                                 class="form-control @error('major') is-invalid @enderror" autocomplete="major">
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="right-column">
-                        <label style="color: #04b4e0; font-size: 13px;">
+                        <label class="custom-label">
                             Date
                         </label>
                         <div class="form-group form-group-with-icon">
@@ -50,7 +50,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <label style="color: #04b4e0; font-size: 13px;">
+                        <label class="custom-label">
                             Education Description
                         </label>
                         <div class="form-group form-group-with-icon">
