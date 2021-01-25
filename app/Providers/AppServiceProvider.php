@@ -27,6 +27,7 @@ class AppServiceProvider extends ServiceProvider
         Blade::include('includes.forms.education', 'education');
         // Template
         Blade::include('includes.leftheader', 'leftheader');
+        Blade::include('includes.headercontent', 'headercontent');
         Blade::include('includes.pages.resume', 'resume');
     }
 }

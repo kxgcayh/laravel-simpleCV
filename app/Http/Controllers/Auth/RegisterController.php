@@ -64,7 +64,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'dateofbirth' => $data['dateofbirth'],
             'title' => $data['title'],
@@ -74,5 +74,11 @@ class RegisterController extends Controller
             'about' => $data['about'],
             'password' => Hash::make($data['password']),
         ]);
+
+        if (isset($data['avatar'])) {
+            $user->addMediaFromRequest('avatar')->toMediaCollection('avatars');
+        }
+
+        return $user;
     }
 }

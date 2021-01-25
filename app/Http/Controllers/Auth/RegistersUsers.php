@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Models\Experience;
-use Carbon\Carbon;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Foundation\Auth\RedirectsUsers;
 use Illuminate\Http\JsonResponse;
@@ -65,13 +63,6 @@ trait RegistersUsers
      */
     protected function registered(Request $request, $user)
     {
-        // Experience::create([
-        //     'company' => 'PT. PT-an',
-        //     'user_id' => Auth::id(),
-        //     'title' => 'Web Enginer',
-        //     'description' => 'Disini saya menjadi gila',
-        //     'from_date' => now(),
-        //     'to_date' => Carbon::tomorrow(),
-        // ]);
+        // The user has been registered.
     }
 }

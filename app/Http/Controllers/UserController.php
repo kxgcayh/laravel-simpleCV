@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Education;
-use App\Models\Experience;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -30,24 +28,12 @@ class UserController extends Controller
         if ($request->password) {
             $user->password = Hash::make($request->password);
         }
+
+        if (isset($request->avatar)) {
+            $user->addMediaFromRequest('avatar')->toMediaCollection('avatars');
+        }
+
         $user->save();
-
-        $experience = new Experience();
-        $experience->user_id = Auth::id();
-        $experience->company = $request->company;
-        $experience->title = $request->exp_title;
-        $experience->description = $request->exp_description;
-        $experience->from_date = $request->from_date;
-        $experience->to_date = $request->to_date;
-        $experience->save();
-
-        $education = new Education();
-        $education->user_id = Auth::id();
-        $education->institution = $request->institution;
-        $education->major = $request->major;
-        $education->description = $request->description;
-        $education->date = $request->date;
-        $education->save();
 
         return redirect()->route('home');
     }

@@ -12,7 +12,7 @@
                 <div class="fields clearfix">
                     <label class="custom-label">Email Address</label>
                     <div class="form-group form-group-with-icon">
-                        <input id="login_email" type="email" name="email"
+                        <input id="email" type="email" name="email"
                             class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}"
                             required autocomplete="email">
                         @error('email')

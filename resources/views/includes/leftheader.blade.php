@@ -2,6 +2,8 @@
     <div class="header-content">
         <div class="header-photo">
             @auth
+                {{-- {{ Auth::user()->getFirstMediaUrl('avatars', 'thumb') }}
+                --}}
                 <img src="{{ asset('img/main_photo.jpg') }}" alt="{{ Auth::user()->name }}">
                 <div class="header-titles">
                     <h2>{{ Auth::user()->name }}</h2>
@@ -20,13 +22,14 @@
                 @else
                     @if (Route::has('register'))
                         <div class="header-buttons">
-                            <a href="#create-cv" class="btn btn-primary">Create your CV</a>
+                            <a href="{{ url('/register#create-cv') }}" class="btn btn-primary">Create your CV</a>
                         </div>
                     @endif
                 @endauth
             </div>
         @endif
     </div>
+
     <ul class="main-menu">
         <li class="active">
             <a href="#home" class="nav-anim">
@@ -70,12 +73,6 @@
                 </form>
             </li>
         @else
-            <li>
-                <a href="#create-cv" class="nav-anim">
-                    <i class="fas fa-user-edit"></i>
-                    <span class="link-text">Create</span>
-                </a>
-            </li>
             <li>
                 <a href="#login" class="nav-anim">
                     <span class="fas fa-sign-in-alt"></span><br>

@@ -7,7 +7,7 @@
             <h3>Your <span>Curriculum Vitae</span> is not complete yet</h3>
             <span>Please Update your Profile because there is no Experience and Education in your data</span>
         </div>
-        <form method="POST" action="{{ route('user.update') }}">
+        <form method="POST" action="{{ route('user.update') }}" enctype=”multipart/form-data”>
             @csrf
             @method('PUT')
             <div class="block-title" style="margin-bottom: -10px;">
@@ -124,9 +124,9 @@
                         <label class="custom-label">Choose new avatar</label>
                         <div class="form-group form-group-with-icon"
                             style="margin-left: -15px; margin-top: -5px; height: 46px;">
-                            <input type="file" class="custom-file-input" id="image" name="image"
+                            <input type="file" class="custom-file-input" id="avatar" name="avatar"
                                 aria-describedby="inputGroupFileAddon01">
-                            <label class="custom-file-label" for="image">Choose file</label>
+                            <label class="custom-file-label" for="avatar">Choose file</label>
                         </div>
                     </div>
                 </div>
