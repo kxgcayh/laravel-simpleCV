@@ -17,15 +17,22 @@ class EducationSeeder extends Seeder
                 'institution' => 'SMK Wikrama Bogor',
                 'user_id' => 1,
                 'major' => 'Software Engineering',
-                'edu_description' => 'Never learn a lot there',
+                'edu_description' => 'Learn basic programming languages.',
                 'date' => '2020-03-01',
             ],
             [
                 'institution' => 'SMP Negeri 3 Bogor',
                 'user_id' => 1,
-                'major' => 'Head Master of Abroy',
-                'edu_description' => 'Syalalasyilili',
+                'major' => 'Junior High School',
+                'edu_description' => 'Active at organization',
                 'date' => '2016-03-01',
+            ],
+            [
+                'institution' => 'SMP Negeri 3 Bogor',
+                'user_id' => 1,
+                'major' => 'Student Council',
+                'edu_description' => 'Active at organization',
+                'date' => '2015-03-01',
             ],
         ];
 

@@ -1,17 +1,13 @@
 <div class="page-title">
-    <h2>Create CV</h2>
+    <h2>Update your <span>Personal Data</span></h2>
 </div>
 <div class="section-content">
     <div class="col-xl-12">
-        <div class="block-title">
-            <h3>Your <span>Curriculum Vitae</span> is not complete yet</h3>
-            <span>Please Update your Profile because there is no Experience and Education in your data</span>
-        </div>
         <form method="POST" action="{{ route('user.update') }}" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="block-title" style="margin-bottom: -10px;">
-                <h3>Personal Info</h3>
+                <h3>Personal Data</h3>
             </div>
             <div class="controls two-columns">
                 <div class="fields clearfix">

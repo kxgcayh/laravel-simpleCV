@@ -2,7 +2,11 @@
     <div class="header-content">
         <div class="header-photo">
             @auth
-                <img src="{{ asset('storage/pics/' . Auth::user()->image) }}" alt="{{ Auth::user()->name }}">
+                @if (auth()->user()->image)
+                    <img src="{{ asset('storage/pics/' . Auth::user()->image) }}" alt="{{ Auth::user()->name }}">
+                @else
+                    <img src="{{ asset('img/main_photo.jpg') }}" alt="profile-picture">
+                @endif
                 <div class="header-titles">
                     <h2>{{ Auth::user()->name }}</h2>
                     <h4>{{ Auth::user()->title }}</h4>
@@ -15,7 +19,7 @@
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                 @auth
                     <div class="header-buttons">
-                        <a href="#" class="btn btn-primary">Download CV</a>
+                        <a href="{{ route('resume') }}" class="btn btn-primary">Generate CV</a>
                     </div>
                 @else
                     @if (Route::has('register'))

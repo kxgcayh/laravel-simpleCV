@@ -6,7 +6,7 @@
 2. Clone Repository dengan:
     1. SSH: `git clone git@github.com:kxgcayh/laravel-simpleCV.git simpleCV` atau
     2. HTTPS: `git clone https://github.com/kxgcayh/laravel-simpleCV.git`.
-3. Buka XAMPP dan Buatlah Database Baru
+3. Buka XAMPP dan Buatlah Database Baru, misalnya: `db_cvBuilder`
 4. Masuk ke Dalam Folder SMSBC Website Landing `cd simpleCV`
 5. Masukkan perintah `composer install`
 6. Konfigurasi Aplikasi
@@ -33,4 +33,4 @@
 
 |       Email       | Password |
 | :---------------: | :------: |
-| example@cv.com    | password |
+| kautsaralbaa@gmail.com    | password |

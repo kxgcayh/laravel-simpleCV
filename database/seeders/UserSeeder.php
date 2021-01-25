@@ -17,9 +17,9 @@ class UserSeeder extends Seeder
             'name' => 'Kautsar Al Bana',
             'dateofbirth' => '2000-09-24',
             'title' => 'Web Developer',
-            'phone' => '080100000000',
-            'email' => 'example@cv.com',
-            'address' => 'Jl. Raya Jalan-Jalan',
+            'phone' => '085880846013',
+            'email' => 'kautsaralbaa@gmail.com',
+            'address' => 'Jl. Raya Bogor',
             'about' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, laborum aliquam excepturi nulla aut ratione sed officia eius? Doloremque dolore, ex fugit nulla dolor saepe corporis, eligendi cumque impedit ipsa incidunt, assumenda facere. Quasi velit molestias, ipsum quaerat rerum veritatis.',
             'password' => Hash::make('password'),
         ]);

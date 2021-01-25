@@ -41,8 +41,5 @@ class UserController extends Controller
             $user->password = Hash::make($request->password);
         }
         $user->save();
-
-        return dd($user);
-        // echo json_encode($data);
     }
 }

@@ -1,16 +1,12 @@
 <div class="page-title">
-    <h2>Create CV</h2>
+    <h2>Insert Education Data</h2>
 </div>
 <div class="section-content">
     <div class="col-xl-12">
-        <div class="block-title">
-            <h3>Your <span>Curriculum Vitae</span> is not complete yet</h3>
-            <span>Please Update your Profile because there is no Experience and Education in your data</span>
-        </div>
         <form method="POST" action="{{ route('education.store') }}">
             @csrf
             <div class="block-title" style="margin-bottom: -10px;">
-                <h3>Educations</h3>
+                <h3>Education</h3>
             </div>
             <div class="controls two-columns">
                 <div class="fields clearfix">
