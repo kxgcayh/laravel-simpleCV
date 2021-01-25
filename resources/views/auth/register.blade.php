@@ -142,11 +142,10 @@
                                             <div class="left-column">
                                                 <label class="custom-label">Full Name</label>
                                                 <div class="form-group form-group-with-icon">
-                                                    <input id="register_name" type="text" name="register_name"
-                                                        value="{{ old('register_name') }}"
-                                                        class="form-control @error('register_name') is-invalid @enderror"
-                                                        required autocomplete="register_name" autofocus>
-                                                    @error('register_name')
+                                                    <input id="name" type="text" name="name" value="{{ old('name') }}"
+                                                        class="form-control @error('name') is-invalid @enderror"
+                                                        required autocomplete="name" autofocus>
+                                                    @error('name')
                                                         <span class="invalid-feedback" role="alert">
                                                             <strong>{{ $message }}</strong>
                                                         </span>
@@ -154,11 +153,10 @@
                                                 </div>
                                                 <label class="custom-label">Email Address</label>
                                                 <div class="form-group form-group-with-icon">
-                                                    <input id="register_email" type="email" name="register_email"
-                                                        class="form-control @error('register_email') is-invalid @enderror"
-                                                        value="{{ old('register_email') }}" required
-                                                        autocomplete="register_email">
-                                                    @error('register_email')
+                                                    <input id="email" type="email" name="email"
+                                                        class="form-control @error('email') is-invalid @enderror"
+                                                        value="{{ old('email') }}" required autocomplete="email">
+                                                    @error('email')
                                                         <span class="invalid-feedback" role="alert">
                                                             <strong>{{ $message }}</strong>
                                                         </span>
@@ -177,11 +175,10 @@
                                                 </div>
                                                 <label class="custom-label">Password</label>
                                                 <div class="form-group form-group-with-icon">
-                                                    <input id="register_password" type="password"
-                                                        name="register_password"
-                                                        class="form-control @error('register_password') is-invalid @enderror"
+                                                    <input id="password" type="password" name="password"
+                                                        class="form-control @error('password') is-invalid @enderror"
                                                         required autocomplete="new-password">
-                                                    @error('register_password')
+                                                    @error('password')
                                                         <span class="invalid-feedback" role="alert">
                                                             <strong>{{ $message }}</strong>
                                                         </span>

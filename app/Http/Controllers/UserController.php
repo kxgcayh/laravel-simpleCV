@@ -30,7 +30,10 @@ class UserController extends Controller
         }
 
         if (isset($request->avatar)) {
-            $user->addMediaFromRequest('avatar')->toMediaCollection('avatars');
+            $avatar = $request->avatar;
+            $user->addMediaFromRequest($avatar)
+                ->toMediaCollection('images')
+            ;
         }
 
         $user->save();

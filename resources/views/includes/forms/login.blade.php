@@ -23,7 +23,7 @@
                     </div>
                     <label class="custom-label">Password</label>
                     <div class="form-group form-group-with-icon">
-                        <input id="login_password" type="password" name="password"
+                        <input id="password" type="password" name="password"
                             class="form-control @error('password') is-invalid @enderror" required
                             autocomplete="new-password">
                         @error('password')
