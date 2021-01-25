@@ -1,8 +1,6 @@
 <div class="header-content">
     <div class="header-photo">
         @auth
-            {{-- {{ Auth::user()->getFirstMediaUrl('avatars', 'thumb') }}
-            --}}
             <img src="{{ asset('img/main_photo.jpg') }}" alt="{{ Auth::user()->name }}">
             <div class="header-titles">
                 <h2>{{ Auth::user()->name }}</h2>
