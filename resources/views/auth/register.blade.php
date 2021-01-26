@@ -244,13 +244,6 @@
                                                         </span>
                                                     @enderror
                                                 </div>
-                                                <label class="custom-label">Choose new avatar</label>
-                                                <div class="form-group form-group-with-icon"
-                                                    style="margin-left: -15px; margin-top: -5px; height: 46px;">
-                                                    <input type="file" class="custom-file-input" id="avatar"
-                                                        name="avatar" aria-describedby="inputGroupFileAddon01">
-                                                    <label class="custom-file-label" for="avatar">Choose file</label>
-                                                </div>
                                             </div>
                                         </div>
                                         <button type="submit" class="button btn-send">Generate CV</button>
