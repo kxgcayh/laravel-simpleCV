@@ -110,13 +110,13 @@
                             <div class="row">
                                 <div class="col-sm-12 col-md-12 col-lg-12">
                                     <div class="title-block">
-                                        <h2>Welcome</h2>
+                                        <h2>Simple CV Builder</h2>
                                         <div class="owl-carousel text-rotation">
                                             <div class="item">
-                                                <div class="sp-subtitle">Create Your CV</div>
+                                                <div class="sp-subtitle">You can create CV</div>
                                             </div>
                                             <div class="item">
-                                                <div class="sp-subtitle">Using this Apps</div>
+                                                <div class="sp-subtitle">in this apps</div>
                                             </div>
                                         </div>
                                     </div>
